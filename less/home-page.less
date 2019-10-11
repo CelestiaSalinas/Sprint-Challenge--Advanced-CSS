@@ -1,17 +1,14 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -56,15 +53,12 @@
       p {
         margin-bottom: 26px;
       }
-
-      .btn {
-      }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +66,38 @@
       }
     }
   }
-}// home
+} // home
+
+.skyline {
+  .center-justify();
+}
+button {
+  .btn-mixin(#22283a, 8px);
+  width: 100px;
+  font-size: 1.8rem;
+  color: white;
+}
+
+button:hover {
+  .hover();
+}
+
+@media @phone {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .space-images {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .sky {
+    display: none;
+  }
+  .launch {
+    display: none;
+  }
+}
